@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "candidates": [
+    {
+      "firstName": "faiza",
+      "lastName": "dadad",
+      "email": "fs@gmail.com",
+      "gender": "2",
+      "company": "ddd",
+      "id": 1
+    },
+    {
+      "firstName": "Qaisaraa",
+      "lastName": "Jee",
+      "email": "faf@gmail.com",
+      "gender": "1",
+      "company": "sss",
+      "id": 2
+    },
+    {
+      "firstName": "Lady",
+      "lastName": "Gaga",
+      "email": "llg@hotmail.com",
+      "gender": "3",
+      "company": "ddd",
+      "id": 3
+    }
+  ]
+}

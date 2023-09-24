@@ -1,0 +1,54 @@
+<div mat-dialog-title>
+    <h1>Candidate Form</h1>
+</div>
+<form [formGroup]="candForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput type="text" placeholder="Ex. Faiza" formControlName="firstName">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput type="text" placeholder="Ex. Faiza" formControlName="lastName">
+            </mat-form-field>
+        </div>
+        
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" placeholder="Ex. Faiza@gmail.com" formControlName="email">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Residence</mat-label>
+                <input matInput type="text" placeholder="Ex. Street 10, Pakistan">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-radio-group aria-label="Select an option" formControlName="gender">
+                <mat-label>Gender</mat-label>
+                <mat-radio-button value="1">Male</mat-radio-button>
+                <mat-radio-button value="2">Female</mat-radio-button>
+                <mat-radio-button value="3">Other</mat-radio-button>
+            </mat-radio-group>
+        </div>   
+
+        <div class="row">
+        <mat-form-field appearance="outline">
+                <mat-label>Company</mat-label>
+                <input matInput type="text" placeholder="Ex. Microsoft" formControlName="company">
+            </mat-form-field>
+        </div>
+        
+    </div>
+
+    <div mat-dialog-actions class="action">
+        <button color="primary" mat-raised-button type="submit">
+            {{data ? 'Update': 'Save'}}
+        </button>
+        <button mat-raised-button [mat-dialog-close]="false">
+            Cancel
+        </button>
+    </div>
+</form>
